@@ -1,19 +1,12 @@
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
 
-<?php
-
-	if(isset($_POST['submit'])){
-		updateTable();
-	}
-
-
-?>
+<?php updateTable(); ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Update Page</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </head>
@@ -21,6 +14,7 @@
 	
 	<div class="container">
 		<div class="col-md-6">
+			<h1 class="text-center">Update</h1>
 			<form action="login_update.php" method="POST">
 				<div class="group">
 					<label for="username">UserName</label>

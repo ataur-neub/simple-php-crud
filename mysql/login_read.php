@@ -1,20 +1,15 @@
 <?php
 		include "db.php";
-		$query="SELECT * FROM users";
-
-		$result=mysqli_query($connection,$query);
-
-		if(!$result){
-			die("query failed" . mysqli_error());
-		}
+		include "functions.php";
 		
+		readData();
 	
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Read Page</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </head>
